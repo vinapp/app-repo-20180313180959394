@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/vinod/NewMobileDashboard/TestShell/TestStarters/BasicStarterAndroid-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9caa178106999d620431894529c20d342548c46">
+        <dex dex="/Users/vinod/NewMobileDashboard/TestShell/TestStarters/BasicStarterAndroid-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_093d8e8abc55f6dd5ed26a4a95372f8f1079a36a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vinod/NewMobileDashboard/TestShell/TestStarters/BasicStarterAndroid-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/vinod/NewMobileDashboard/TestShell/TestStarters/BasicStarterAndroid-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9d2c19f35ff131f875b23e1a339cece332f32bbf/classes.dex" />
+    </item>
+
+</items>
