@@ -30,7 +30,7 @@ The Basic IBM Cloud Mobile Starter is an empty project that has integration poin
 ##### Steps (IBM Cloud Mobile Foundation (Optional)):
 
 * Goto the project folder and find a shell script by name **mfpregisterapp.sh** and ensure that you have execute and write permissions in order to run the script.
-* run **mfpregisterapp.sh** with package (name) as the input (refer AndroidManifest.xml for this value).
+* run **mfpregisterapp.sh** with package(name) as the input (refer AndroidManifest.xml for this value).
 * run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
 * Update **mfpclient.properties**: Replace the **host** value with **mobilefoundationUrl** value from **credentials.xml**. Keep the other values as default.
 
