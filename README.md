@@ -15,7 +15,7 @@ Basic IBM Cloud Mobile Starter in Java
 
 ### Summary
 
-The Basic IBM Cloud Mobile Starter is an empty project that has integration points for each of the IBM Cloud Mobile services.
+The Basic IBM Cloud Mobile Starter project has integration points (by default) for Push Notification and Mobile Analytics services and it can also be extended to add other IBM Cloud Mobile services.
 
 ### Requirements
 
@@ -30,9 +30,7 @@ The Basic IBM Cloud Mobile Starter is an empty project that has integration poin
 ##### Steps (IBM Cloud Mobile Foundation (Optional)):
 
 * Goto the project folder and find a shell script by name **mfpregisterapp.sh** and ensure that you have execute and write permissions in order to run the script.
-* run **mfpregisterapp.sh** with package(name) as the input (refer AndroidManifest.xml for this value).
-* run **mfpstartersetup.sh**. This should set up the Mobile Foundation prereqs for running the starter
-* Update **mfpclient.properties**: Replace the **host** value with **mobilefoundationUrl** value from **credentials.xml**. Keep the other values as default.
+* run **mfpregisterapp.sh**. This should set up the Mobile Foundation prereqs for running the starter
 
 ### Run
 
@@ -40,9 +38,7 @@ Click **Run** to start the app in Android Studio.
 
 <img src="README_Images/basic.png" alt="Basic App Screenshot" width="250px"/>
 
-The application has built in integration points for the Mobile Analytics, Push Notifications and Mobile Foundation services.
+The application has built in integration points for the Mobile Analytics, Push Notifications and Mobile Foundation service (if added).
 
 ### License
 This package contains code licensed under the Apache License, Version 2.0 (the "License"). You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 and may also view the License in the LICENSE file within this package.
-
-zed.

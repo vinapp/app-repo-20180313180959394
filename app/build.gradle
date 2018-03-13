@@ -2,6 +2,11 @@ apply plugin:'base'
 apply plugin: 'com.android.application'
 
 android {
+    packagingOptions {
+
+        pickFirst 'META-INF/LICENSE'
+
+    }
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
 
@@ -13,6 +18,18 @@ android {
         versionName "1.0"
         manifestPlaceholders = ['appIdRedirectScheme': android.defaultConfig.applicationId]
     }
+
+    signingConfigs {
+
+        release {
+            storeFile file("../fastlanesign.jks")
+            storePassword "password"
+            keyAlias "key0"
+            keyPassword "password"
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -26,8 +43,9 @@ android {
 }
 
 dependencies {
-    compile ('com.ibm.mobilefirstplatform.clientsdk.android:core:[2.0.0,3.0.0)')
-    compile 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundation:+'
+    
+    compile ('com.ibm.mobilefirstplatform.clientsdk.android:analytics:1.+')
+    compile ('com.ibm.mobilefirstplatform.clientsdk.android:push:3.+')
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:25.1.0'
