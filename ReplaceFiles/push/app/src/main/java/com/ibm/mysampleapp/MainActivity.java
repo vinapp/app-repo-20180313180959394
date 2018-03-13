@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.ibm.mobilefirstplatform.clientsdk.android.core.api.BMSClient;
 import com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPush;
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(String response) {
-            
+                Toast.makeText(getBaseContext(),"Successfully registered for IBM Cloud Push Notifications",Toast.LENGTH_LONG).show();
                 // Split response and convert to JSON object to display User ID confirmation from the backend.
                 String[] resp = response.split("Text: ");
                 String userId = "";
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(MFPPushException ex) {
-            
+                Toast.makeText(getBaseContext(),"Failed to register for IBM Cloud Push Notifications",Toast.LENGTH_LONG).show();
                 String errLog = "Error registering for Bluemix Push Notifications: ";
                 String errMessage = ex.getErrorMessage();
                 int statusCode = ex.getStatusCode();
